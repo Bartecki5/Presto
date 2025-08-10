@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Wizytówka - Twój Sklep</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main>
+  <!-- HERO -->
+  <section class="hero" id="hero" style="background-image: url('zdj.png');">
+    <div class="hero-inner">
+      <div class="brand"><span class="dot"></span> <span>Twój Sklep</span></div>
+      <h1>Witamy w naszym sklepie</h1>
+      <p class="lead">Najlepsze produkty, miła obsługa i dogodna lokalizacja.</p>
+
+      <div class="controls">
+        <div class="hint">Przesuń w dół, aby zobaczyć szczegóły</div>
+      </div>
+    </div>
+
+    <button class="down-arrow" id="scrollDown">▼</button>
+  </section>
+
+  <!-- INFO SECTION -->
+  <section class="info" id="info">
+    <div class="card">
+      <div class="left">
+        <div class="addr">Sklep Trzcianka — ul. Kościuszki 2a, Trzcianka</div>
+        <div class="meta">Kontakt: +48 123 456 789 • e-mail: kontakt@przykład.pl</div>
+
+        <div class="hours">
+          <strong>Godziny otwarcia</strong>
+          <ul>
+            <li>Pon — Pt: 09:00 — 18:00</li>
+            <li>Sobota: 09:00 — 14:00</li>
+            <li>Niedziela: nieczynne</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="right">
+        <iframe
+            class="map-frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2870.543884798491!2d16.459820976972654!3d53.04035739757406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4701566578a161eb%3A0xf502183f8711f11a!2sTadeusza%20Ko%C5%9Bciuszki%202A%2C%2064-980%20Trzcianka!5e1!3m2!1spl!2spl!4v1754842250010!5m2!1spl!2spl"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+
+    </div>
+  </section>
+</main>
+
+<script>
+  // Przycisk przewijania
+  document.getElementById('scrollDown').addEventListener('click', ()=> {
+    document.getElementById('info').scrollIntoView({behavior:'smooth'});
+  });
+</script>
+</body>
+</html>
